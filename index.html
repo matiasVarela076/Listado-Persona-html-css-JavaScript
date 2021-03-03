@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Personas</title>
+     <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload="mostrarPersonas()"> <!--Evento para cargar una funcion de la clase persona-->
+        <div class="contenedor" id="cabecero">
+                <h1>Listado de Personas</h1>
+          </div>  
+            
+          <div class="contenedor">
+             <div class="elemento">
+                <ul id="personas">  <!--Ul = unordered List = lista desordenada, le asignamos un id-->
+                      <!--LI= List item = todos los elemento que tiene nuestra lista-->
+                </ul>
+              </div>
+            </div>
+            
+            <div class="contenedor">
+                <div style= 'text-align: center;'> <!--Que este alineado al centro-->
+                    <button style="cursor: pointer" onclick="agregarPersona()">+</button>  <!--Cursor sea un apuntador 
+                                                                                            y al hacer click ejecute la funcion-->
+                </div>
+                <form id="formu">
+                    <input type="text" id="nombre" placeholder="Ingrese un Nombre"/>
+                    <input type="text" id="apellido" placeholder="Ingrese un "/>
+
+                </form>
+             </div>
+
+          <!--Agregamos la clase persona y el app-->
+            <script src="js/persona.js"></script>
+            <script src="js/app.js"></script> 
+    
+</body>
+</html>
